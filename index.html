@@ -1,0 +1,47 @@
+<!--
+
+    Description: Builds an AJAX search form for a dataset that queries the City
+    of Winnipeg Open Data API and displays search results below the form.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <title>Garbage, Recycling and Yard Waste Collection Services of Winnipeg.</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Residential Garbage, Recycling and Yard Waste Tonnage Report.</h1>
+            <h3>Quarterly and Yearly amounts of Residential Garbage, Recycling and Yard Waste collected by the City of Winnipeg.</h3>
+        </header>
+        <div id="content">
+            <form>
+                <label for="type" class="label">Enter the service type: </label>
+                <input id="type" name="type" type="text" autofocus />
+                <button class="button" type="submit">Search</button>
+            </form>
+            <p id="hint">For example: Garbage, Recycling, Yard Waste.</p>
+            <p id="message">Sorry, no records were found.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="th">Date</th>
+                        <th class="th">Amount</th>
+                        <th class="th">Type</th>
+                        <th class="th">Year</th>
+                        <th class="th">Quarter</th>
+                        <th class="th">Yard Waste Type</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p id="records"></p>
+        </div> 
+    </main>
+</body>
+</html>
