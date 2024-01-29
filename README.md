@@ -5,7 +5,7 @@ dataset.
 
 ## Demo
 
-Here is a working live demo: https://open-data-api.epizy.com/
+Here is a working live demo: https://open-data-api.vercel.app/
 
 ## Built With
 
